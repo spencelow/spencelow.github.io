@@ -23,14 +23,34 @@ header {
     width: 100%;
     background: linear-gradient(to right, #5f62ff, #ffc371);
     color: #fff;
-    padding: 1rem 0;
     text-align: center;
     border-bottom: 4px solid #333;
     position: absolute;
     top: 0;
     left: 0;
     height: 5%;
-    line-height: 1vh;
+    display: flex;               /* Added */
+    justify-content: center;     /* Added */
+    align-items: center;         /* Added */
+}
+
+header h1 {                        /* Added */
+    font-size: calc(8px + 1vw);    /* Scalable font size */
+    padding: 0 1rem;               /* Avoid text clipping */
+    margin: 0;                     /* Remove default margin */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    header {
+        height: auto;                    /* Allow header height to adjust based on content */
+        padding: 0.5rem;
+    }
+    header h1 {
+        font-size: 3vw;                  /* Adjust font size for small screens */
+        line-height: 1.2;                /* Adjust line height for readability */
+        padding: 0 0.5rem;               /* Add padding to prevent text clipping */
+    }
 }
 
 nav ul {
