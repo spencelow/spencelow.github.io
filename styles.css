@@ -1,74 +1,68 @@
 /* styles.css */
 
-/* Use the 'Press Start 2P' font for a retro look */
+/* Import the 'Press Start 2P' font for a retro look */
 body {
     font-family: 'Press Start 2P', cursive;
-    background: #d9d9d9;
-    color: #333;
+    background: url('5006.png') repeat;
+    color: #fff;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-/* Enhance the header with a gradient and bold font */
-header {
-    background: linear-gradient(to right, #ff5f6d, #ffc371);
-    color: #fff;
-    padding: 1rem 0;
+.container {
     text-align: center;
-    border-bottom: 4px solid #333;
+    position: relative;
 }
 
-header h1 {
+header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0;
-    font-size: 2rem;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    text-shadow: 0 0 5px #000;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background: linear-gradient(145deg, #ff6ec4, #7873f5);
+    box-shadow: 5px 5px 0 #333;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-    width: 80%;
-}
-
-section h2 {
-    font-size: 1.5rem;
-    color: #ff5f6d;
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-}
-
-/* Style the 3D text boxes */
-.box {
-    background: #f2f2f2;
-    padding: 1rem;
-    border: 2px solid #333;
-    box-shadow: 10px 10px 0 #ccc, 10px 10px 0 1px #333;
-    margin-top: 1rem;
-}
-
+/* Style the footer */
 footer {
-    background: linear-gradient(to right, #7cff5f, #ffac71);
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -77,7 +71,6 @@ footer {
     bottom: 0;
 }
 
-/* Add a neon glow effect to the footer */
 footer p {
-    text-shadow: 0 0 10px #fff, 0 0 20px #5ffff2, 0 0 30px #5f67ff, 0 0 40px #ef5fff, 0 0 50px #ff5f6d, 0 0 60px #ff5f6d, 0 0 70px #ff5f6d;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff5f6d, 0 0 30px #ff5f6d, 0 0 40px #ff5f6d, 0 0 50px #ff5f6d, 0 0 60px #ff5f6d, 0 0 70px #ff5f6d;
 }
