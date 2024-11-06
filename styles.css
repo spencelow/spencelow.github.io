@@ -1,61 +1,83 @@
 /* styles.css */
 
-/* Reset default margin and padding, and set a consistent line height and font family for the page */
+/* Use the 'Press Start 2P' font for a retro look */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    background: #d9d9d9;
+    color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
-/* Style the header, setting a background color, text color, padding, and text alignment */
+/* Enhance the header with a gradient and bold font */
 header {
-    background: #333; /* Dark grey background */
-    color: #fff; /* White text color */
-    padding: 1rem 0; /* Vertical padding of 1rem (16px), no horizontal padding */
-    text-align: center; /* Center-align text */
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 4px solid #333;
 }
 
-/* Remove margin around the h1 element inside header */
 header h1 {
-    margin: 0; /* No margin */
+    margin: 0;
+    font-size: 2rem;
 }
 
-/* Remove list styling and padding from navigation list */
 nav ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* No padding */
+    list-style: none;
+    padding: 0;
 }
 
-/* Display list items in a horizontal row and add space between them */
 nav ul li {
-    display: inline; /* Inline display for horizontal layout */
-    margin-right: 1rem; /* Right margin of 1rem (16px) */
+    display: inline;
+    margin-right: 1rem;
 }
 
-/* Style the links inside the navigation */
 nav ul li a {
-    color: #fff; /* White text color */
-    text-decoration: none; /* Remove underline from links */
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Add padding around the main content area */
 main {
-    padding: 2rem; /* Padding of 2rem (32px) on all sides */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 
-/* Add bottom margin to each section to create space between them */
 section {
-    margin-bottom: 2rem; /* Bottom margin of 2rem (32px) */
+    margin-bottom: 2rem;
+    width: 80%;
 }
 
-/* Style the footer, setting a background color, text color, text alignment, and padding */
+section h2 {
+    font-size: 1.5rem;
+    color: #ff5f6d;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+/* Style the 3D text boxes */
+.box {
+    background: #f2f2f2;
+    padding: 1rem;
+    border: 2px solid #333;
+    box-shadow: 10px 10px 0 #ccc, 10px 10px 0 1px #333;
+    margin-top: 1rem;
+}
+
 footer {
-    background: #333; /* Dark grey background */
-    color: #fff; /* White text color */
-    text-align: center; /* Center-align text */
-    padding: 1rem 0; /* Vertical padding of 1rem (16px), no horizontal padding */
-    position: fixed; /* Fix the footer to the bottom of the viewport */
-    width: 100%; /* Ensure the footer spans the full width of the viewport */
-    bottom: 0; /* Position the footer at the bottom */
+    background: linear-gradient(to right, #7cff5f, #ffac71);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Add a neon glow effect to the footer */
+footer p {
+    text-shadow: 0 0 10px #fff, 0 0 20px #5ffff2, 0 0 30px #5f67ff, 0 0 40px #ef5fff, 0 0 50px #ff5f6d, 0 0 60px #ff5f6d, 0 0 70px #ff5f6d;
 }
